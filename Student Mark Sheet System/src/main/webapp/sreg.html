@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <header>
+            <h1>New Student Register</h1>
+        </header>
+
+        <section>
+            <div>
+                <a href="index.html">
+                    <button id="hb">Home</button>
+                </a>
+            </div>
+            <div class="container">
+                <h2>Create Account</h2>
+                <form method="post" action="sreg.jsp" onsubmit="return validate()">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    
+                    <label for="sic">Sic:</label>
+                    <input type="text" name="sic" id="sic" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="cpassword">Confirm Passsword:</label>
+                    <input type="password" name="cpassword" id="cpassword">
+                    
+                    <button type="submit">Register</button>
+                </form>
+                <p class="cal">Already have an account? <a href="slogin.html">Log in</a></p>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+        function validate(){
+        	var password = document.getElementById('password').value.trim();
+            var cpassword = document.getElementById('cpassword').value.trim();
+            
+            if (password !== cpassword) {
+                alert('Passwords do not match. Please re-enter.');
+                return false;
+            }
+        }
+        
+        </script>
+
+        <footer>
+            &copy; 2023 Student Marksheet System
+        </footer>
+    </body>
+</html>

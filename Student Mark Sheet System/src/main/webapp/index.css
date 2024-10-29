@@ -1,0 +1,35 @@
+header, footer{
+    text-align: center;
+    background-color: skyblue;
+    color: black;
+    padding: 20px;
+}
+section{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+    padding: 10px 0px;
+}
+section > div{
+    background-color: lightgray;
+    padding: 20px;
+}
+div{
+    padding: 20px;
+}
+#hb{
+    text-align: center;
+    margin: auto 0;
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    width: 70%;
+    font-size: large;
+    border-radius: 10px;
+    background-color: aqua;
+}
+button:hover{
+    background-color: white;
+    cursor: pointer;
+}
